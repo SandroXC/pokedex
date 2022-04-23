@@ -13,12 +13,12 @@
     </header>
 
   <main>
-    <section id="cards">
+    <section id='cards'>
       <% pokedex.forEach((pokemon) => { %>
-      <div class="card">
+      <div class='card'>
         <img src="<%=  pokemon.imagem %>" alt="" />
         <h2><%= pokemon.nome %></h2>
-        <p class="descricao"><%= pokemon.descricao %></p>
+        <p class='descricao'><%= pokemon.descricao %></p>
         <p><%= pokemon.tipo %></p>
       </div>
       <% }) %>
