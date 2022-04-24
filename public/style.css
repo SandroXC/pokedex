@@ -43,3 +43,38 @@ section#cards div.card h2 {
 section#cards div.card p.descricao {
   margin-bottom: 1rem;
 }
+
+section#cadastro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+
+section#cadastro h2 {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+section#cadastro form {
+  width: 50%;
+}
+
+section#cadastro form input {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  outline: none;
+  border: solid 2px rgb(197, 197, 197);
+  margin: 0 1rem 1rem 1rem;
+}
+
+section#cadastro form label {
+  margin-bottom: 1rem;
+  color: rgb(197, 197, 197);
+}
+
+/*section#cadastro form button {
+}
+*/
