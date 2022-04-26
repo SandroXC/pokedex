@@ -54,7 +54,7 @@ app.get("/", (req, res) => {
   res.render("index", { pokedex, pokemon });
 });
 
-app.post("/add", (req, res) => {
+app.post("/create", (req, res) => {
   const pokemon = req.body;
   pokemon.id = pokedex.lenght + 1;
   pokedex.push(pokemon);
