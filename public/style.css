@@ -29,7 +29,7 @@ section#cards {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: ##ffeed9;
+  background-color: #ffeed9;
 }
 
 section#cards div.card {
