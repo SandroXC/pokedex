@@ -17,33 +17,6 @@
 
     <main>
 
-      <section id="cards">
-        <% pokedex.forEach((pokemon) => { %>
-
-          <div class="card">
-          <img src="<%=  pokemon.imagem %>" alt="" />
-
-          <h2><%= pokemon.nome %></h2>
-
-          <p class="altura"><%= pokemon.altura %></p></br>
-
-          <p class="peso"><%= pokemon.peso %></p></br>
-
-          <p class="categoria"><%= pokemon.categoria %></p></br>
-
-          <p class="habilidade"><%= pokemon.habilidade %></p></br>
-
-          <p class="descricao"><%= pokemon.descricao %></p>
-
-          <p><%= pokemon.tipo %></p></br>
-
-          <a href="/detalhes/<%= pokemon.id %>">Editar</a>
-
-        </div>
-        <% }) %>
-
-      </section>
-
       <section id="cadastro">
 
         <% if (pokemon == undefined)  { %>
@@ -113,6 +86,36 @@
         
         </form>
        <% } %> 
+      </section>
+
+      <section id="cards">
+
+        <h2>Lista de Pokemons</h2>
+
+        <% pokedex.forEach((pokemon) => { %>
+
+          <div class="card">
+          <img src="<%=  pokemon.imagem %>" alt="" />
+
+          <h2><%= pokemon.nome %></h2>
+
+          <p class="altura"><%= pokemon.altura %></p></br>
+
+          <p class="peso"><%= pokemon.peso %></p></br>
+
+          <p class="categoria"><%= pokemon.categoria %></p></br>
+
+          <p class="habilidade"><%= pokemon.habilidade %></p></br>
+
+          <p class="descricao"><%= pokemon.descricao %></p>
+
+          <p><%= pokemon.tipo %></p></br>
+
+          <a href="/detalhes/<%= pokemon.id %>">Editar</a>
+
+        </div>
+        <% }) %>
+
       </section>
 
     </main>
