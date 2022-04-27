@@ -11,6 +11,13 @@
 
   <body>
 
+      <nav>
+          <ul>
+              <li><a href="#cadastro">Cadastro</a></li>
+              <li><a href="#cards">Pokemons</a></li>
+          </ul>
+      </nav>
+
     <header>
       <h1>Pokedex</h1>
     </header>
@@ -112,6 +119,7 @@
           <p><%= pokemon.tipo %></p></br>
 
           <a href="/detalhes/<%= pokemon.id %>">Editar</a>
+          <a href="/delete/<%= pokemon.id %>">Apagar</a>
 
         </div>
         <% }) %>
@@ -119,6 +127,10 @@
       </section>
 
     </main>
+
+    <footer>
+      <p>Todos os direitos reservados para SandroXC &copy;</p>
+    </footer>
 
   </body>
 

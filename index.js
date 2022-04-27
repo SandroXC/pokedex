@@ -67,7 +67,7 @@ app.post("/create", (req, res) => {
 app.get("/detalhes/:id", (req, res) => {
   const id = +req.params.id;
   pokemon = pokedex.find((pokemon) => pokemon.id === id);
-  res.redirect("/");
+  res.redirect("/#cadastro");
 });
 
 app.post("/update/:id", (req, res) => {
@@ -77,6 +77,12 @@ app.post("/update/:id", (req, res) => {
   pokedex[id] = newPokemon;
   pokemon = undefined;
   res.redirect("/");
+});
+
+app.get("/delete/:id", (req, res) => {
+  const id = +req.params.id - 1;
+  delete pokedex[id];
+  res.redirect("/#cards");
 });
 
 app.listen(3000, () =>
