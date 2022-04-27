@@ -8,7 +8,7 @@
 
 header {
   padding: 4rem;
-  background-color: red;
+  background-color: black;
 }
 
 header h1 {
@@ -39,6 +39,11 @@ section#cards div.card {
   margin-top: 2rem;
 }
 
+section#cards h2 {
+  width: 100%;
+  text-align: center;
+}
+
 section#cards div.card img {
   width: 100%;
 }
@@ -49,6 +54,20 @@ section#cards div.card h2 {
 
 section#cards div.card p.descricao {
   margin-bottom: 1rem;
+}
+
+section#cards div.card a {
+  padding: 1rem;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: #ffeed9;
+  border: solid 0px red;
+  color: red;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 section#cadastro {
